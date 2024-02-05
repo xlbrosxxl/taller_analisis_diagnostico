@@ -1,0 +1,42 @@
+Inicio
+   // Declarar variables
+   Entero n, i, j
+   Real elemento
+   Booleano esUnitaria
+
+   // Solicitar al usuario el tamaño de la matriz
+   Escribir "Ingrese el orden de la matriz (n): "
+   Leer n
+
+   // Declarar matriz U de tamaño n x n
+   Real[][] U
+
+   // Inicializar bandera esUnitaria como Verdadero
+   esUnitaria = Verdadero
+
+   // Ciclo para cargar la matriz U
+   Para i desde 1 hasta n hacer
+      Para j desde 1 hasta n hacer
+         // Solicitar al usuario el elemento U[i][j]
+         Escribir "Ingrese el elemento U[", i, "][", j, "]: "
+         Leer elemento
+
+         // Verificar si es parte de la diagonal principal o no
+         Si i = j entonces
+            // Verificar si el elemento de la diagonal principal es 1
+            Si elemento ≠ 1 entonces
+               Escribir "La matriz no es unitaria."
+               esUnitaria = Falso
+               Salir del ciclo interno
+            Fin Si
+         Sino
+            // Verificar si los elementos fuera de la diagonal son 0
+            Si elemento ≠ 0 entonces
+               Escribir "La matriz no es unitaria."
+               esUnitaria = Falso
+               Salir del ciclo interno
+            Fin Si
+         Fin Si
+      Fin Para
+
+      // Salir del ciclo externo si ya
