@@ -1,4 +1,3 @@
-
 Inicio
    // Declarar variables
    Entero n, i, elemento
@@ -44,8 +43,3 @@ Inicio
    Fin Para
 
 Fin
-```
-
-Este pseudocódigo utiliza un único bucle `Para` para ingresar los elementos del vector y verifica si cada elemento es primo. Si es primo, lo muestra y lo almacena en un vector adicional (`primos`). Al final, muestra todos los números primos encontrados.
-
-Espero que esto sea lo que necesitas. ¿Hay algo más en lo que pueda ayudarte?
