@@ -1,3 +1,4 @@
+
 Inicio
    // Declarar variables
    Entero n, i, elemento
@@ -31,4 +32,20 @@ Inicio
       // Si el elemento es primo, mostrar y almacenar en el vector de primos
       Si EsPrimo entonces
          contadorPrimos = contadorPrimos + 1
-         p
+         primos[contadorPrimos] = elemento
+         Escribir "Número primo encontrado en la posición ", i, ": ", elemento
+      Fin Si
+   Fin Para
+
+   // Mostrar el vector de primos
+   Escribir "Números primos encontrados: "
+   Para i desde 1 hasta contadorPrimos hacer
+      Escribir primos[i]
+   Fin Para
+
+Fin
+```
+
+Este pseudocódigo utiliza un único bucle `Para` para ingresar los elementos del vector y verifica si cada elemento es primo. Si es primo, lo muestra y lo almacena en un vector adicional (`primos`). Al final, muestra todos los números primos encontrados.
+
+Espero que esto sea lo que necesitas. ¿Hay algo más en lo que pueda ayudarte?
