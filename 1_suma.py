@@ -11,6 +11,6 @@ def suma_maxima_subarreglo(arr):
     return suma_maxima
 
 # Ejemplo de uso:
-arr = [2,-3,2,2,0]
+arr = [1,2,-1,-2,3,4,-5,4]
 resultado = suma_maxima_subarreglo(arr)
 print(f"La suma máxima de subarreglo es: {resultado}")
